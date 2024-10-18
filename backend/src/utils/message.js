@@ -1,0 +1,18 @@
+export const USERS_MESSAGES = { 
+    USERNAME_IS_REQUIRED: 'name is required',
+    USERNAME_LENGTH_MUST_BE_FROM_8_TO_20: 'username must be between 8 and 20 characters',
+    USERNAME_EXISTS_ERROR: 'username already exists',
+    USERNAME_MUST_BE_A_STRING: 'name must be a string',
+    PASSWORD_IS_REQUIRED: 'password is required',
+    PASSWORD_LENGTH_MUST_BE_FROM_8_TO_20: 'password must be between 8 and 20 characters',
+    PASSWORD_FORMAT_ERROR: 'password format error',
+    CONFIRM_PASSWORD_IS_REQUIRED: 'confirm password is required',
+    CONFIRM_PASSWORD_MUST_BE_THE_SAME_AS_PASSWORD: 'confirm password must be the same as password',
+    CONFIRM_PASSWORD_LENGTH_MUST_BE_FROM_8_TO_20: 'confirm password must be between 8 and 20 characters', 
+    BIRTHDAY_IS_REQUIRED: 'birthday is required',
+    EMAIL_IS_REQUIRED: 'email is required',
+    EMAIL_FORMAT_ERROR: 'invalid email format',
+    EMAIL_EXISTS_ERROR: 'email already exists',
+    REGISTER_SUCCESS: 'register success',
+    INVALID_CREDENTIALS: 'invalid credentials',
+}
