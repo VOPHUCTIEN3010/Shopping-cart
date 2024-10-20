@@ -23,6 +23,9 @@ class DatabaseService {
     get users() {    
         return this.db.collection(process.env.DB_COLLECTION_USERS);
     }
+    get products() { 
+        return this.db.collection(process.env.DB_COLLECTION_PRODUCTS);
+    }
 }
 
 export const databaseService = new DatabaseService();

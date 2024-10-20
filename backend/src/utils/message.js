@@ -15,4 +15,17 @@ export const USERS_MESSAGES = {
     EMAIL_EXISTS_ERROR: 'email already exists',
     REGISTER_SUCCESS: 'register success',
     INVALID_CREDENTIALS: 'invalid credentials',
+    LOGIN_SUCCESS: 'login success',
+    REFRESH_TOKEN_IS_REQUIRE: 'refresh token is required',
+    GET_USERS_SUCCESS: 'get users success',
+    UNAUTHORIZED: 'unauthorized',
+}
+
+export const PRODUCTS_MESSAGES = {
+    CREATE_PRODUCT_SUCCESS: 'create product successfully',
+    GET_PRODUCTS_SUCCESS: 'get products successfully',
+    GET_PRODUCT_SUCCESS: 'get product successfully',
+    PRODUCT_NOT_FOUND: 'product not found',
+    UPDATE_PRODUCT_SUCCESS: 'update product successfully',
+    DELETE_PRODUCT_SUCCESS: 'delete product successfully',
 }

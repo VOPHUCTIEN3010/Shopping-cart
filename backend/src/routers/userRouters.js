@@ -1,15 +1,20 @@
 import express from "express";
-import {loginValidator, registerValidator }  from "../middlewares/userMiddlewares.js"
+import {loginValidator, registerValidator }  from "../middlewares/userMiddlewares.js";
+import auth from "../middlewares/auth.js";
 import {
   loginController,
   registerController,
-  // logoutController
+  logoutController,
+  getUserController,
+  updateUserController
 } from "../controllers/userController.js";
 
-const router = express.Router()
+const routerUser = express.Router()
 
-router.post('/register', registerValidator, registerController )
-router.post('/login', loginValidator, loginController )
-// router.post('logout', logoutController)
+routerUser.post('/register', registerValidator, registerController )
+routerUser.post('/login', loginValidator, loginController )
+routerUser.post('/logout', logoutController)
+routerUser.get('/me', auth, getUserController).put('/updateMe', auth , updateUserController)
 
-export default router;
+// router.post('/update/user')
+export default routerUser;

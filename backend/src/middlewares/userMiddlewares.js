@@ -20,20 +20,6 @@ export const registerValidator = validate(
                 errorMessage: USERS_MESSAGES.PASSWORD_FORMAT_ERROR
             }
         },
-        confirmPassword: {
-            notEmpty: { 
-                errorMessage: USERS_MESSAGES.CONFIRM_PASSWORD_IS_REQUIRED
-            },
-            isLength: {
-                options: { min: 8, max: 20 },
-                errorMessage: USERS_MESSAGES.CONFIRM_PASSWORD_LENGTH_MUST_BE_FROM_8_TO_20
-            },
-            custom: {
-                options: (value, { req }) => value === req.body.password,
-                errorMessage: USERS_MESSAGES.CONFIRM_PASSWORD_MUST_BE_THE_SAME_AS_PASSWORD
-            },
-            trim: true
-        },
         email: {
             notEmpty: {
                 errorMessage: USERS_MESSAGES.EMAIL_IS_REQUIRED
