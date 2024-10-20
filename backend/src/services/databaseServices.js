@@ -26,6 +26,9 @@ class DatabaseService {
     get products() { 
         return this.db.collection(process.env.DB_COLLECTION_PRODUCTS);
     }
+    get categories() { 
+        return this.db.collection(process.env.DB_COLLECTION_CATEGORIES);
+    }
 }
 
 export const databaseService = new DatabaseService();

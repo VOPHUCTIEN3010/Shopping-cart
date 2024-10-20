@@ -23,15 +23,16 @@ const ProductService = {
     },
     updateProductById: async (productId, productData) => {
         const updatedProduct = await databaseService.products.updateOne(
-            { _id: productId },
+            { _id: new ObjectId(productId) },
             { $set: productData }
         );
         return updatedProduct;
     },
     deleteProductById: async (productId) => {
         const result = await databaseService.products.deleteOne({
-            _id: productId,
+            _id: new ObjectId(productId),
         });
+        return result;
     },
 };
 
